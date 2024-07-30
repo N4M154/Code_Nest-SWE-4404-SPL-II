@@ -8,107 +8,6 @@ Welcome to CodeNest – a comprehensive and user-friendly online platform design
 4. **Engage and Practice:** Participate in quizzes and problem-solving exercises to reinforce your learning.
 5. **Track Your Progress:** Keep an eye on your progress with our dynamic progress bar.
 
-
-## Project Structure
-
-### Backend (/api)
-
-- */config*
-  - db.js: Database configuration
-
-- */controllers*
-  - auth.controller.js: Authentication logic
-  - course.controller.js: Course handling logic
-  - user.controller.js: User management logic
-
-- */models*
-  - course.model.js: Course data schema
-  - user.model.js: User data schema
-
-- */prisma*
-  - schema.prisma: Prisma schema definition
-
-- */routes*
-  - about.route.js: About page routes
-  - auth.route.js: Authentication routes
-  - compiler.route.js: Code compilation routes
-  - course.route.js: Course routes
-  - user.route.js: User routes
-
-- */utils*
-  - error.js: Error handling utilities
-  - verifyUser.js: User verification utilities
-
-- index.js: Backend server entry point
-
-### Frontend (/client)
-
-- */public*
-  - vite.svg: Vite logo
-
-- */src*
-  - */components*
-    - Footer.jsx: Footer component
-    - Header.jsx: Header component
-    - Layout.jsx: Layout component
-    - OAuth.jsx: OAuth integration component
-    - PrivateRoute.jsx: Private route component
-    - SecondaryHeader.jsx: Secondary header component
-    - ShowHeader.jsx: Header display component
-  - */images*: Image assets
-  - */pages*
-    - About.jsx: About page
-    - Array.jsx: Array lesson
-    - ArrayQuiz.jsx: Array quiz
-    - C.jsx: C programming language lesson
-    - CForeword.jsx: C language foreword
-    - ConditionQuiz.jsx: Conditions quiz
-    - Conditions.jsx: Conditions lesson
-    - Cpp.jsx: C++ lesson
-    - CSharp.jsx: C# lesson
-    - ForLoop.jsx: For loop lesson
-    - FunctionQuiz.jsx: Functions quiz
-    - Functions.jsx: Functions lesson
-    - HelloWorld.jsx: Hello World lesson
-    - Home.jsx: Home page
-    - Operators.jsx: Operators lesson
-    - OpQuiz.jsx: Operators quiz
-    - Profile.jsx: User profile
-    - ProgressBar.jsx: Progress bar component
-    - SignIn.jsx: Sign in page
-    - SignUp.jsx: Sign up page
-    - StringQuiz.jsx: Strings quiz
-    - Strings.jsx: Strings lesson
-    - TheEnd.jsx: Conclusion page
-    - Topics.jsx: Topics overview
-    - UploadAndCompile.jsx: Upload and compile code
-    - VariableQuiz.jsx: Variables quiz
-    - While.jsx: While loop lesson
-    - WhileQuiz.jsx: While loop quiz
-    - arraycpp.jsx: C++ arrays lesson
-    - h_worldcpp.jsx: C++ Hello World lesson
-    - operatorscpp.jsx: C++ operators lesson
-    - variables.jsx: Variables lesson
-    - variables_cpp.jsx: C++ variables lesson
-  - */redux*
-    - *course*
-      - courseSlice.js: Course Redux slice
-    - *user*
-      - userSlice.js: User Redux slice
-    - store.js: Redux store configuration
-  - */utils*
-    - pdf.js: PDF utilities
-  - App.jsx: Main React component
-  - firebase.js: Firebase configuration
-  - index.css: Global styles
-  - main.jsx: Frontend entry point
-
-- index.html: Main HTML file
-- postcss.config.js: PostCSS configuration
-- tailwind.config.js: Tailwind CSS configuration
-- vite.config.js: Vite configuration
-    
-
 ## 🌐 User Information
 Users can personalize their learning experience by creating a profile, which stores their progress, course enrollments, and achievements. Ensure you complete your profile for a tailored experience.
 
@@ -156,6 +55,22 @@ Users can personalize their learning experience by creating a profile, which sto
 
 ## Getting Started
 
+### Adding dotenv files
+
+1. Add dotenv file in the root:
+   ```bash
+   MONGO = " "
+   JWT_SECRET = " "
+   ```
+2. Add dotenv file in the client:
+    ```bash
+   VITE_FIREBASE_API_KEY = " "
+   ```
+3. Add dotenv file in the api:
+   ```bash
+   DATABASE_URL=" "
+   ```
+   
 ### Installation
 
 1. Clone the repository:
@@ -197,9 +112,12 @@ Users can personalize their learning experience by creating a profile, which sto
     npm run dev
     ```
 
-
-
 ## 🌟 Motivation for the Project
 CodeNest was created out of a passion for programming and a desire to provide an engaging and effective learning platform for enthusiasts of all levels. Our goal is to make learning programming accessible, enjoyable, and rewarding.
 
 Dive into the world of programming with CodeNest! Let the learning begin!
+
+## Demonstration
+
+Chech out this video to get an idea about this projecct:
+[CodeNest 1.0](https://youtu.be/GCQthQWzPso)
